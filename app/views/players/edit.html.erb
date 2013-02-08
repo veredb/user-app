@@ -1,0 +1,26 @@
+<title>Edit Player</title>
+
+<h1>Edit Player</title>
+
+<%= form_for(@player) do |f| %>
+    <div class="field">
+        <%= f.label :playerID %><br />
+        <%= f.text_field :playerID %>
+    </div>
+    <div class="field">
+        <%= f.label :birthYear %><br />
+        <%= f.text_field :birthYear %>
+    </div>
+    <div class="field">
+        <%= f.label :nameFirst %><br />
+        <%= f.text_field :nameFirst %>
+    </div>
+    <div class="field">
+        <%= f.label :nameLast %><br />
+        <%= f.text_field :nameLast %>
+    </div>
+    <div class="actions">
+        <%= f.submit "Update" %><br />
+    </div>
+     
+<% end %>

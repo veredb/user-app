@@ -152,4 +152,69 @@ describe PlayersController do
   end
 
 
+  
+  describe "GET 'edit'" do
+
+     before(:each) do
+       @player = Factory(:player)
+     end
+
+
+     it "should be successful" do
+       get :edit, :id => @player
+       response.should be_success
+     end
+
+     it "should have the right title" do
+        get :edit, :id => @player
+        response.should have_selector("title", :content => "Edit Player")
+     end
+  end
+
+
+
+  describe "PUT 'update'" do
+     before(:each) do
+       @player = Factory(:player)
+     end
+
+     describe "success" do
+       before(:each) do
+        @attr = { :playerID => "newplayer01", :birthYear => 1987, :nameFirst => "foo", :nameLast => "bar" }
+       end
+
+       it "should change the user's attributes" do
+          put :update, :id => @player, :player => @attr
+          @player.reload
+          @player.playerID.should == @attr[:playerID]
+          @player.birthYear.should == @attr[:birthYear]
+          @player.nameFirst.should == @attr[:nameFirst]
+          @player.nameLast.should == @attr[:nameLast]
+       end
+
+       it "should redirect to the user show page" do
+          put :update, :id => @player, :player => @attr
+          response.should redirect_to(player_path(@player))
+       end
+     end
+
+     describe "failure" do
+       before(:each) do
+        @attr = { :playerID => "", :birthYear => "", :nameFirst => "", :nameLast => "" }
+       end
+
+       it "should render the 'edit' page" do
+         put :update, :id => @player, :player => @attr
+         response.should render_template('edit')
+       end
+
+       it "should have the right title" do
+         put :update, :id => @player, :player => @attr
+         response.should have_selector("title", :content => "Edit Player")
+       end
+     end
+      
+  end
+  
+
 end
