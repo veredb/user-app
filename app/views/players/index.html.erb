@@ -1,0 +1,16 @@
+<title>All Players</title>
+<h1>All Players</h1>
+
+<%= link_to "NewPlayer", new_player_path %>
+
+<%= will_paginate %>
+
+<ul>
+  <% @players.each do |player| %>
+    <li>
+      <%= link_to player.playerID, player %>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

@@ -1,0 +1,30 @@
+
+<title>New Player</title>
+
+<h1>New Player</h1>
+
+<%= link_to "All_Players", players_index_path %><br />
+
+<%= form_for(@player) do |f| %>
+    <div class="field">
+        <%= f.label :playerID %><br />
+        <%= f.text_field :playerID %>
+    </div>
+    <div class="field">
+        <%= f.label :birthYear %><br />
+        <%= f.text_field :birthYear %>
+    </div>
+    <div class="field">
+        <%= f.label :nameFirst %><br />
+        <%= f.text_field :nameFirst %>
+    </div>
+    <div class="field">
+        <%= f.label :nameLast %><br />
+        <%= f.text_field :nameLast %>
+    </div>
+    <div class="actions">
+        <%= f.submit "Submit" %><br />
+    </div>
+     
+<% end %>
+
