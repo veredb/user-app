@@ -217,3 +217,39 @@ REQUESTING PAGE: GET /players/1/edit with {} and HTTP headers {}
 REQUESTING PAGE: POST /players/1 with {"utf8"=>"✓", "_method"=>"put", "player"=>{"playerID"=>"Mozo001", "birthYear"=>"1987", "nameFirst"=>"Mozo", "nameLast"=>"rok"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/players/1/edit"}
 REQUESTING PAGE: GET http://www.example.com/players/1 with {} and HTTP headers {"HTTP_REFERER"=>"/players/1"}
 REQUESTING PAGE: GET /players/2 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/players/1"}
+REQUESTING PAGE: GET /players/1 with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /players/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /players with {"utf8"=>"✓", "player"=>{"playerID"=>"Mozo001", "birthYear"=>"1987", "nameFirst"=>"Mozo", "nameLast"=>"rok"}, "commit"=>"Submit"} and HTTP headers {"HTTP_REFERER"=>"/players/new"}
+REQUESTING PAGE: GET http://www.example.com/players/2 with {} and HTTP headers {"HTTP_REFERER"=>"/players"}
+REQUESTING PAGE: GET /players/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/players/2"}
+REQUESTING PAGE: GET /players/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /players/1 with {"utf8"=>"✓", "_method"=>"put", "player"=>{"playerID"=>"Mozo001", "birthYear"=>"1987", "nameFirst"=>"Mozo", "nameLast"=>"rok"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/players/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/players/1 with {} and HTTP headers {"HTTP_REFERER"=>"/players/1"}
+REQUESTING PAGE: GET /players/2 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/players/1"}
+REQUESTING PAGE: GET /players/1 with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /players/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /players/1 with {"utf8"=>"✓", "_method"=>"put", "player"=>{"playerID"=>"Mozo001", "birthYear"=>"1987", "nameFirst"=>"Mozo", "nameLast"=>"rok"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/players/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/players/1 with {} and HTTP headers {"HTTP_REFERER"=>"/players/1"}
+REQUESTING PAGE: GET /players/2 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/players/1"}
+REQUESTING PAGE: GET /players/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /players with {"utf8"=>"✓", "player"=>{"playerID"=>"Mozo001", "birthYear"=>"1987", "nameFirst"=>"Mozo", "nameLast"=>"rok"}, "commit"=>"Submit"} and HTTP headers {"HTTP_REFERER"=>"/players/new"}
+REQUESTING PAGE: GET http://www.example.com/players/2 with {} and HTTP headers {"HTTP_REFERER"=>"/players"}
+REQUESTING PAGE: GET /players/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/players/2"}
+REQUESTING PAGE: GET /players/1 with {} and HTTP headers {}
+REQUESTING PAGE: GET /players/1 with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /players/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /players/1 with {"utf8"=>"✓", "_method"=>"put", "player"=>{"playerID"=>"Mozo001", "birthYear"=>"1987", "nameFirst"=>"Mozo", "nameLast"=>"rok"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/players/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/players/1 with {} and HTTP headers {"HTTP_REFERER"=>"/players/1"}
+REQUESTING PAGE: GET /players/2 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/players/1"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /players/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /players with {"utf8"=>"✓", "player"=>{"playerID"=>"Mozo001", "birthYear"=>"1987", "nameFirst"=>"Mozo", "nameLast"=>"rok"}, "commit"=>"Submit"} and HTTP headers {"HTTP_REFERER"=>"/players/new"}
+REQUESTING PAGE: GET http://www.example.com/players/2 with {} and HTTP headers {"HTTP_REFERER"=>"/players"}
+REQUESTING PAGE: GET /players/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/players/2"}
+REQUESTING PAGE: GET /players/1 with {} and HTTP headers {}
+REQUESTING PAGE: GET /players/1 with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}

@@ -19,7 +19,7 @@ describe "Links" do
      it "should have a New Player link" do
         visit root_path
         response.should have_selector("a", :href => new_player_path,
-                                           :content => "NewPlayer")
+                                           :content => "New_Player")
      end
   end
 

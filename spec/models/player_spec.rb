@@ -15,6 +15,8 @@ describe Player do
      Player.create!(@attr)
   end
 
+
+
   #   validation tests
 
   it "should require a nameLast" do
