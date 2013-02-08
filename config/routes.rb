@@ -1,7 +1,10 @@
 UserApp::Application.routes.draw do
-  get "players/index"
-  resources :players
 
+  get "players/index"
+  get "players/new"
+  get "players/show"
+  resources :players
+  
    root :to => 'players#index'
 
   # The priority is based upon order of creation:
