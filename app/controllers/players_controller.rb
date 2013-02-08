@@ -15,7 +15,6 @@ class PlayersController < ApplicationController
   def create
      @player = Player.new(params[:player])
      if @player.save
-        flash[:success] = "Welcome to the Player App"
         redirect_to @player
      else
         @title = "New Player"
@@ -31,7 +30,6 @@ class PlayersController < ApplicationController
 
   def destroy
      Player.find(params[:id]).destroy
-     flash[:success] = "User destroyed"
      redirect_to players_path
   end
 
