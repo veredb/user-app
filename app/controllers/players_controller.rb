@@ -5,10 +5,12 @@ class PlayersController < ApplicationController
     @players = Player.paginate(:page => params[:page]) 
   end
 
+
   def new
      @title = "New Player"
      @player = Player.new
   end
+
 
   def create
      @player = Player.new(params[:player])
@@ -21,8 +23,16 @@ class PlayersController < ApplicationController
      end
   end
 
+
   def show
      @player = Player.find(params[:id])
+  end
+
+
+  def destroy
+     Player.find(params[:id]).destroy
+     flash[:success] = "User destroyed"
+     redirect_to players_path
   end
 
 end

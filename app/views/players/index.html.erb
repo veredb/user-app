@@ -9,6 +9,8 @@
   <% @players.each do |player| %>
     <li>
       <%= link_to player.playerID, player %>
+      <%= link_to "delete", player, :method => :delete, :confirm => "Are you sure", 
+                                                    :title => "Delete #{player.playerID}" %>
     </li>
   <% end %>
 </ul>

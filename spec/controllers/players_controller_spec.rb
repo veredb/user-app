@@ -64,6 +64,7 @@ describe PlayersController do
     end
   end
 
+
   describe "POST 'create'" do
    
     describe "success" do
@@ -106,6 +107,7 @@ describe PlayersController do
   end
 
 
+
   describe "GET 'show'" do
 
     before(:each) do
@@ -126,6 +128,27 @@ describe PlayersController do
          get :show, :id => @player
          response.should have_selector("h1", :content => @player.nameLast)
     end 
+  end
+
+
+  
+  describe "DELETE 'destroy'" do
+
+     before(:each) do
+       @player = Factory(:player)
+     end
+
+
+     it "should destroy the player" do
+        lambda do
+           delete :destroy, :id => @player
+        end.should change(Player, :count).by(-1)
+     end
+
+     it "should redirect to the players page" do
+        delete :destroy, :id => @player
+        response.should redirect_to(players_path)
+     end
   end
 
 
